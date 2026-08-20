@@ -61,8 +61,21 @@ function AuthPage() {
       setError("กรอกรหัสพนักงานและรหัสผ่านให้ครบ");
       return;
     }
-    setBusy(true);
-    try {
+    if (mode === "setup") {
+      if (fullName.trim().length < 2) {
+        setError("กรุณากรอกชื่อ-นามสกุลอย่างน้อย 2 ตัวอักษร");
+        return;
+      }
+      if (cleanCode.length < 2) {
+        setError("รหัสพนักงานต้องมีอย่างน้อย 2 ตัวอักษร");
+        return;
+      }
+      if (password.length < 6) {
+        setError("รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร");
+        return;
+      }
+    }
+
       if (mode === "setup") {
         await createFirstAdmin({
           data: { employeeCode: cleanCode, fullName: fullName.trim(), password },
