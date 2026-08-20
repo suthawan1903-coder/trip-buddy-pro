@@ -75,7 +75,8 @@ function AuthPage() {
         return;
       }
     }
-
+    setBusy(true);
+    try {
       if (mode === "setup") {
         await createFirstAdmin({
           data: { employeeCode: cleanCode, fullName: fullName.trim(), password },
