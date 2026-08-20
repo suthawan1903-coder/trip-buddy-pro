@@ -1,6 +1,6 @@
 # Trip Buddy Pro
 
-"ช่วยดึงโปรเจกต์จาก GitHub นี้มาให้หน่อย: [https://github.com/suthawan1903-coder/trip-buddy-pro-02](https://github.com/suthawan1903-coder/trip-buddy-pro-02)"
+"ช่วยดึงโปรเจกต์จาก GitHub นี้มาให้หน่อย: [https://github.com/suthawan1903-coder/trip-buddy-pro](https://github.com/suthawan1903-coder/trip-buddy-pro)"
 
 This project was built with [Lovable](https://lovable.dev).
 
